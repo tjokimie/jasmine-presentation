@@ -1,4 +1,4 @@
-jasmine-presentation
+Jasmine - BDD for JavaScript
 ====================
 
-Presentation about Jasmine BDD testing framework
+Install node.js and install dependencies by running `npm install` & `bower install` in `jasmine-presentation` directory. Run `grunt server` to start the presentation.

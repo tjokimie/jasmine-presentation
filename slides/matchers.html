@@ -1,0 +1,19 @@
+<h2>Included matchers</h2>
+
+<pre><code>expect(true).toBe(true); // compares with ===
+expect(false).not.toBe(true);</code></pre>
+
+<pre><code>var foo = {
+    a: 12,
+    b: 34
+};
+var bar = {
+    a: 12,
+    b: 34
+};
+expect(foo).toEqual(bar);
+
+expect(foo).not.toBe(bar);
+expect(foo).toBe(foo);</code></pre>
+
+<small>Source: <a href="http://pivotal.github.io/jasmine/">http://pivotal.github.io/jasmine/</a></small>

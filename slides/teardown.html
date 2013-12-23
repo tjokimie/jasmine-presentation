@@ -1,0 +1,19 @@
+<h2>Setup &amp; Teardown</h2>
+
+<pre><code>desribe('Super cool calculator', function () {
+    var counter;
+
+    afterEach(function () {
+        counter = 1;
+    });
+
+    it('should add a number', function () {
+        counter = counter + 2; // counter is 1
+        expect(counter).toBe(3);
+    });
+
+    it('should multiply a number', function () {
+        counter = counter * 5; // counter is 1
+        expect(counter).toBe(5);
+    });
+});</code></pre>

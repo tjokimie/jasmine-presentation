@@ -1,0 +1,18 @@
+<h2>Nested suites</h2>
+
+<pre><code>desribe('Super cool calculator', function () {
+    var counter;
+
+    describe('addition', function () {
+        beforeEach(function () {
+            counter = 0;
+        });
+
+        it('should add a number', function () {
+            counter = counter + 2;
+            expect(counter).toBe(2);
+        });
+    });
+
+    describe('multiplication', function () {
+        ...</code></pre>

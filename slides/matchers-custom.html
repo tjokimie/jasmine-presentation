@@ -1,0 +1,13 @@
+<h2>Custom Matchers</h2>
+
+To add the matcher to your suite, call <code>this.addMatchers()</code> from within a <code>before</code> or <code>it</code> block.
+
+<pre><code>beforeEach(function() {
+    this.addMatchers({
+        toBeLessThan: function(expected) {
+            return this.actual < expected;
+        }
+    });
+});</code></pre>
+
+<small>Source: <a href="http://github.com/pivotal/jasmine/wiki/Matchers#writing-new-matchers">http://github.com/pivotal/jasmine/wiki/Matchers#writing-new-matchers</a></small>

@@ -1,0 +1,39 @@
+<h2>suites &amp; specs</h2>
+
+<pre><code>desribe('Super cool calculator', function () {
+    var counter = 1;
+
+    it('should add a number', function () {
+        counter = counter + 2; // counter is 1
+        expect(counter).toBe(3);
+    });
+
+    it('should multiply a number', function () {
+        counter = counter * 5; // counter is 3
+        expect(counter).toBe(15);
+    });
+});</code></pre>
+
+<aside class="notes">
+    <ul>
+        <li>
+            Test suite alkaa globaalin <code>describe</code>-funktion kutsulla
+            <ul>
+                <li>Ensimmäinen string-parametri kuvaa mitä on testin suorituksen alla</li>
+                <li>...toinen parametri, funktio, implementoi suiten</li>
+            </ul>
+        </li>
+        <li>
+            Test spec alkaa globaalin <code>it</code>-funktion kutsulla
+            <ul>
+                <li>Ensimmäinen string-parametri on specin otsikko</li>
+                <li>
+                    ...toinen parametri, funktio, sisältää specin, eli itse testin
+                    <ul>
+                        <li>Spec sisältää yhden tai useamman assertin suorituksen alla olevan koodin tilasta</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</aside>
