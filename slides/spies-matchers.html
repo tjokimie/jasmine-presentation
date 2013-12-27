@@ -5,10 +5,10 @@
 
     beforeEach(function () {
         safe = {
-            setInfo: function (stuff) { } // TODO: implement me
+            setInfo: function (stuff) { /* set info */ }
         };
         spyOn(safe, 'setInfo').andCallThrough();
-    });
+    });                    // .and.callThrough(); in Jasmine 2.0
 
     it('should know your stuff', function () {
         safe.setInfo('Top secret stuff');
