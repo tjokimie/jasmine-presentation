@@ -1,0 +1,19 @@
+<h2>Mocking Service</h2>
+
+<pre><code>describe('UserController', function () {
+    var scope, userService;
+ 
+    beforeEach(module('YourAwesomeApp')); // load module under test
+
+    beforeEach(module(function ($provide) {
+        userService = jasmine.createSpyObj('userService', ['get']);
+        $provide.value('userService', userService);
+        userService.get.andReturn([{ id: 1, name: 'Esapekka' }]);
+    }));
+
+    beforeEach(inject(function ($rootScope, $controller) {
+        scope = $rootScope.$new();
+        $controller('UserController', { $scope: scope });
+    });
+
+    // Specs...</code></pre>

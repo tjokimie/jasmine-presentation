@@ -1,0 +1,14 @@
+<h2>AngularJS</h2>
+
+<pre><code>var app = angular.module('YourAwesomeApp', ['ngResource']);
+ 
+app.factory('userService', function ($resource) {
+    return $resource('users/users.json')
+});
+ 
+app.controller('UserController', function ($scope, userService) {
+    $scope.text = 'Hello World!';
+    $scope.users = userService.get();
+});</code></pre>
+
+<small>Source: <a href="http://www.tuesdaydeveloper.com/2013/06/angularjs-testing-with-karma-and-jasmine/">http://www.tuesdaydeveloper.com/2013/06/angularjs-testing-with-karma-and-jasmine/</a></small>

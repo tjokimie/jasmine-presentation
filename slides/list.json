@@ -16,5 +16,13 @@
         "spies-matchers.html",
         "spies-mocking.html"
     ],
-    "coverage.html"
+    "coverage.html",
+    [
+        "angularjs.html",
+        "angularjs-spec.html",
+        "angularjs-mock.html",
+        "angularjs-mock-spec.html",
+        "angularjs-httpbackend.html"
+    ],
+    "links.html"
 ]

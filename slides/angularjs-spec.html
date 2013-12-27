@@ -1,0 +1,16 @@
+<h2>Jasmine</h2>
+
+<pre><code>describe('UserController', function () {
+    var scope;
+ 
+    beforeEach(module('YourAwesomeApp')); // load module under test
+
+    beforeEach(inject(function ($rootScope, $controller) {
+        scope = $rootScope.$new();
+        $controller('UserController', { $scope: scope });
+    });
+
+    it('should have Hello World! -text', function () {
+        expect(scope.text).toBe('Hello World!');
+    });
+});</code></pre>

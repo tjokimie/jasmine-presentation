@@ -1,0 +1,6 @@
+<h2>Or use HttpBackend</h2>
+
+<pre><code>    beforeEach(inject(function ($httpBackend) {
+        $httpBackend.when('GET', 'users/users.json')
+            .respond([{ id: 1, name: 'Esapekka' }]);
+    });</code></pre>
