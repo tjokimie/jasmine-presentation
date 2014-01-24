@@ -3,7 +3,7 @@
 <pre><code>var app = angular.module('YourAwesomeApp', ['ngResource']);
  
 app.factory('userService', function ($resource) {
-    return $resource('users/users.json')
+    return $resource('users/users.json');
 });
  
 app.controller('UserController', function ($scope, userService) {

@@ -1,20 +1,20 @@
 <h2>Mocking with Spies</h2>
 
 <pre><code>describe('NSA', function () {
-    var safe;
+    var storage;
 
     beforeEach(function () {
-        safe = {
+        storage = {
             getInfo: function () { return 'My stuff'; }
         };
-        spyOn(safe, 'geInfo').andCallFake(function () {
+        spyOn(storage, 'geInfo').andCallFake(function () {
             return 'NSA stuff';
         });
-        // or shorter: spyOn(safe, 'getInfo').andReturn('NSA stuff');
+        // or shorter: spyOn(storage, 'getInfo').andReturn('NSA stuff');
     });
 
     it('should tell your information', function () {
-        expect(safe.getInfo()).toBe('NSA stuff');
+        expect(storage.getInfo()).toBe('NSA stuff');
     });
 });</code></pre>
 

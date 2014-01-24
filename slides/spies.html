@@ -1,20 +1,20 @@
 <h2>Spies</h2>
 
 <pre><code>describe('NSA', function () {
-    var safe;
+    var storage;
 
     beforeEach(function () {
-        safe = {
+        storage = {
             getInfo: function () {
                 return 'Top secret stuff';
             }
         };
-        spyOn(safe, 'getInfo').andCallThrough();
+        spyOn(storage, 'getInfo').andCallThrough();
     });
 
     it('should be spying on you', function () {
-        safe.getInfo();
-        expect(safe.getInfo).toHaveBeenCalled();
+        storage.getInfo();
+        expect(storage.getInfo).toHaveBeenCalled();
     });
 });</code></pre>
 
